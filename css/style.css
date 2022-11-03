@@ -1,0 +1,152 @@
+
+
+body{
+	background: url('../img/rate.jpg') 0 0 / cover no-repeat; 
+	
+}
+
+.cloud{
+	width: 600px;
+	height: 335px;
+	background: url('../img/cloud.png') 0 0 no-repeat; 
+	position: absolute;
+	top: -480px;
+	animation: cloud 7s linear alternate-reverse;
+}
+
+header{
+	position: relative;
+}
+
+.wrapper{
+	margin: 600px 0px 0px 200px;
+}
+
+
+.head-car{
+	width: 550px;
+	height: 200px;
+	background-color: cornflowerblue;
+	border-radius: 0% 100% 93% 7% / 0% 100% 0% 100%  ; 
+	margin-top: 15px;
+	margin-left: 35px;
+	z-index: 1;
+	position: absolute;
+}
+
+.bottom-car{
+	width: 700px;
+	height: 200px;
+	background-color: plum;
+	border-radius: 49% 51% 50% 50% / 22% 22% 78% 78% ; 
+	margin-top: 111px; 
+
+}
+
+.car__head{
+	max-width: 700px; 
+	max-height: 500px;
+}
+
+.wheel{
+	background: url('../img/kolesa-1.png') 0 0 no-repeat; 
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+	margin: -122px 261px -70px 3px;
+	animation: wheels 8s linear;
+}
+
+
+
+
+.window{
+	background: url('../img/product-3\ 1.png') 0 0 no-repeat; 
+	width: 250px;
+	height: 200px;
+	z-index: 3;
+	margin: -57px 0px 0px 50px;
+	position: absolute;
+}
+
+.cat{
+	background: url('../img/кот.png') 0 0 no-repeat; 
+	z-index: 4;
+	width: 120px;
+	height: 120px;
+	margin: -33px 0px 0px 115px;
+	position: absolute;
+}
+
+.cigarette{
+	background: url('../img/сигарета.png') 0 0 no-repeat; 
+	z-index: 5;
+	width: 33px;
+	height: 27px;
+	margin: 20px 0px 0px 155px;
+	position: absolute;
+}
+
+.hat{
+	background: url('../img/шапка.png') 0 0 no-repeat; 
+	z-index: 6;
+	width: 175px;
+	height: 130px;
+	margin:-118px 0px 0px 78px;
+	position: absolute;
+}
+
+.lights{
+	background: url('../img/fara-posle-polirovki.png.png') 0 0 no-repeat; 
+	z-index: 7;
+	width: 120px;
+	height: 70px;
+	margin: 128px 0px 0px 61px;
+	position: absolute;
+}
+
+.car__content{
+	max-width: 300px; 
+	max-height: 300px;
+}
+
+.head-bottom{
+	width: 130px;
+	height: 80px;
+	margin: -93px 0px 0px 335px;
+}
+
+.car{
+	transform: translate(-200%, 0px);
+	position: relative;
+	animation: car-ride 8s linear;
+}
+
+@keyframes car-ride{
+	0% {
+		transform: translate(-90%, 0px);
+	}
+
+	100% {
+		transform: translate(150%, 0px);
+	}
+}
+
+@keyframes wheels{
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cloud{
+	0%{
+		left: 0%;
+	}
+	100%{
+		left: 50%;
+	}
+}
